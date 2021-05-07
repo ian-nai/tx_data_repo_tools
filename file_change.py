@@ -63,7 +63,7 @@ def convert_files(files_checked):
                 lib_dir = '/Applications/LibreOffice.app/Contents/MacOS'
                 if os.path.exists(lib_dir) and os.path.isdir(lib_dir):
                     os.chdir(lib_dir)
-                    subprocess.Popen(['./soffice',  '--headless', '--invisible', '--convert-to', 'pdf', '--outdir', '/Users/ipg98/Desktop/pt', '/Users/ipg98/curated_test/pg.pptx'])
+                    subprocess.Popen(['./soffice',  '--headless', '--invisible', '--convert-to', 'pdf', '--outdir', '[YOUR OUT DIRECTORY]', '[LOCATION OF FILE YOU WANT TO CHANGE]'])
             
         
         r_matchers = ['.R']
