@@ -53,7 +53,7 @@ print(final_list)
 
 import xlsxwriter
 
-workbook = xlsxwriter.Workbook('test.xlsx')
+workbook = xlsxwriter.Workbook('dataverse_search.xlsx')
 worksheet = workbook.add_worksheet()
 
 worksheet.set_column('A:A', 14)
@@ -79,6 +79,6 @@ workbook.close()
 
 import csv
 
-with open("out.csv", "w", newline="") as f:
+with open("dataverse_search.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerows(final_list)
