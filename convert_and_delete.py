@@ -6,6 +6,7 @@ import subprocess
 import pathlib
 from pathlib import Path
 import shutil
+from send2trash import send2trash
 
 types = ['**/*.doc', '**/*.docx', '**/*.psd', '**/*.mov', '**/*.accdb', '**/*.xlsx', '**/*.xls', '**/*.xlsm', '**/*.ppt', '**/*.pptx', '**/*.wmv', '**/*.wma', '**/*.mp3', '**/*.wpl', '**/*.R', '**/*.py']
 
@@ -105,6 +106,6 @@ def convert_files(files_checked):
 
 def remove_old_formats():
     for file in files_to_delete:
-        os.remove(file)
+        send2trash(file)
 
 check_docu()
