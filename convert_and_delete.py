@@ -105,9 +105,8 @@ def convert_files(files_checked):
         remove_old_formats()
 
 def remove_old_formats():
-    files_to_delete = [file for file in files_to_delete if not file.endswith('.py')]
-    files_to_delete = [file for file in files_to_delete if not file.endswith('.R')]
     for file in files_to_delete:
-        send2trash(file)
+        if not file.endswith('.py') and not file.endswith('.R'):
+            send2trash(file)
 
 check_docu()
