@@ -73,7 +73,7 @@ worksheet.conditional_format('A2:K7', {'type': 'text',
                                        'criteria': 'ends with',
                                        'value': '.pdf (file) ',
                                        'format': format1})
-#pdf (file)
+
 workbook.close()
 
 
