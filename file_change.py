@@ -45,9 +45,6 @@ def convert_files(files_checked):
         mov_matching = [s for s in files_checked if any(xs in s for xs in mov_matchers)]
         if len(mov_matching) >= 1:
             for x in mov_matching:
-                 y = str(pathlib.Path(x).parent.absolute())
-                 z = (y + '/' + x)
-                 a = (y + '/' + 'test.mp4')
                  subprocess.Popen(['ffmpeg', '-i', x, '-vcodec', 'h264', '-acodec', 'aac', (x + '.mp4')])
 
         sound_matchers = ['wma', 'mp3']
