@@ -3,8 +3,6 @@ import pandas as pd
 from docx2pdf import convert
 import os
 import subprocess
-import pathlib
-from pathlib import Path
 import shutil
 from send2trash import send2trash
 
