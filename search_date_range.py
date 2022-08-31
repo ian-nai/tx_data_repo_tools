@@ -46,8 +46,11 @@ for item in dataset_list_cleaned:
 
 count = 0
 for x in final_list:
-    x.insert(0,dataset_list_final[count])
-    count += 1
+    try:
+        x.insert(0,dataset_list_final[count])
+        count += 1
+    except:
+        pass
 
 print(final_list)
 
