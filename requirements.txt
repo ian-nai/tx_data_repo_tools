@@ -1,6 +1,6 @@
 XlsxWriter == 1.4.3
 docx2pdf == 0.1.7
 pandas == 1.2.4
-requests == 2.25.1
+requests == 2.32.2
 openpyxl == 3.0.9 
 Send2Trash == 1.8.0 
